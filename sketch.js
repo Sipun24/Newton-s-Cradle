@@ -48,14 +48,13 @@ function draw() {
   rope4.display()
   rope5.display()
 
-  keyPressed();
+  
   drawSprites();
 }
 function keyPressed() { 
-	if (keyCode === UP_ARROW) 
+	if (keyCode === 38) 
 	{ Matter.Body.applyForce(bobobject5.body,bobobject5.body.position,{x:100,y:100}); } 
 
-	if(bobobject5.x > 650)
-	{keyCode = DOWN_ARROW}
+	
 }
 
